@@ -271,6 +271,9 @@ Gnuplot2dDataset::Data2d::PrintExpression(std::ostream& os,
     case HISTEPS:
         os << " with histeps";
         break;
+    case FILLEDCURVE:
+      os << " with filledcurve";
+      break;
     }
 
     if (!m_extra.empty())

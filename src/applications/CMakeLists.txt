@@ -7,6 +7,7 @@ build_lib(
     helper/three-gpp-http-helper.cc
     helper/udp-client-server-helper.cc
     helper/udp-echo-helper.cc
+    helper/qkd-app-helper.cc
     model/application-packet-probe.cc
     model/bulk-send-application.cc
     model/onoff-application.cc
@@ -26,6 +27,13 @@ build_lib(
     model/udp-echo-server.cc
     model/udp-server.cc
     model/udp-trace-client.cc
+    model/qkd-postprocessing-application.cc
+    model/qkd-key-manager-system-application.cc
+    model/qkd-kms-queue-logic.cc
+    model/qkd-app-004.cc
+    model/qkd-app-014.cc
+    model/qkd-app-header.cc 
+    model/qkd-sdn-controller.cc 
   HEADER_FILES
     helper/bulk-send-helper.h
     helper/on-off-helper.h
@@ -33,6 +41,7 @@ build_lib(
     helper/three-gpp-http-helper.h
     helper/udp-client-server-helper.h
     helper/udp-echo-helper.h
+    helper/qkd-app-helper.h
     model/application-packet-probe.h
     model/bulk-send-application.h
     model/onoff-application.h
@@ -52,6 +61,15 @@ build_lib(
     model/udp-echo-server.h
     model/udp-server.h
     model/udp-trace-client.h
+    model/qkd-postprocessing-application.h
+    model/qkd-key-manager-system-application.h
+    model/qkd-kms-queue-logic.h
+    model/qkd-app-004.h
+    model/qkd-app-014.h
+    model/qkd-app-header.h
+    model/qkd-sdn-controller.h 
+    utils/http.h
+    utils/json.h
   LIBRARIES_TO_LINK ${libinternet}
   TEST_SOURCES
     test/three-gpp-http-client-server-test.cc
